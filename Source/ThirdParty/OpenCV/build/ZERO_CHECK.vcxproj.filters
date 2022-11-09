@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Users\Unreal Project\MachineLearning\Plugins\UOpenCV\Source\ThirdParty\OpenCV\build\CMakeFiles\17daab0a66f4850fe66ff56647c9e0b6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{59E191BD-9D88-397B-BFDB-8E402069A642}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^F:\USERS\UNREAL PROJECT\MACHINELEARNING\PLUGINS\UOPENCV\SOURCE\THIRDPARTY\OPENCV\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Users/Unreal Project/MachineLearning/Plugins/UOpenCV/Source/ThirdParty/OpenCV" "-BF:/Users/Unreal Project/MachineLearning/Plugins/UOpenCV/Source/ThirdParty/OpenCV/build" --check-stamp-file "F:/Users/Unreal Project/MachineLearning/Plugins/UOpenCV/Source/ThirdParty/OpenCV/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
