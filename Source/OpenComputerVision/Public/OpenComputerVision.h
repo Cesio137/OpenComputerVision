@@ -4,7 +4,7 @@
 
 #include "Modules/ModuleManager.h"
 
-class FUOpenCVModule : public IModuleInterface
+class FOpenComputerVisionModule : public IModuleInterface
 {
 public:
 
@@ -14,9 +14,8 @@ public:
 
 private:
 	/** Handle to the test dll we will load */
-	void*	opencv_worldLibraryHandle;
-	void*	opencv_world_dLibraryHandle;
-	void*	opencv_videoioLibraryHandle;
-	void*	opencv_videoio_dLibraryHandle;
-	void*	opencv_videoio_ffmpegLibraryHandle;
+	void* OpenCVLibraryHandle;
+	void* opencv_worldLibraryHandle;
+	void* opencv_videoioLibraryHandle;
+	void* opencv_videoio_ffmpegLibraryHandle;
 };

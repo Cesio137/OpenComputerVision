@@ -2,15 +2,16 @@
 
 using UnrealBuildTool;
 
-public class UOpenCV : ModuleRules
+public class OpenComputerVision : ModuleRules
 {
-	public UOpenCV(ReadOnlyTargetRules Target) : base(Target)
+	public OpenComputerVision(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
+                "$(PluginDir)/Source/ThirdParty",
 				"$(PluginDir)/Source/ThirdParty/OpenCV/Win64/include"
 			}
 			);
