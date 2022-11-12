@@ -58,8 +58,7 @@ Plugins/*/Binaries/*
 
 # Builds
 Build/*
-Source/ThirdParty/OpenCV/build/*
-reply/*
+*build/
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
