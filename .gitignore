@@ -43,6 +43,10 @@
 *.sdf
 *.VC.db
 *.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.json
 
 # Precompiled Assets
 SourceArt/**/*.png
@@ -54,6 +58,7 @@ Plugins/*/Binaries/*
 
 # Builds
 Build/*
+Source/ThirdParty/OpenCV/build/*
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
@@ -75,3 +80,5 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+
