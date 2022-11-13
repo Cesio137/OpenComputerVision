@@ -20,9 +20,6 @@
 
 using namespace cv;
 
-void UOpenCVLibrary();
-
-ocl::Context context;
-ocl::Device device;
+OPENCV_LIBRARY_H void UOpenCVLibrary();
 
 #endif //OPENCV_LIBRARY_H

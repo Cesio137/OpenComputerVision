@@ -8,11 +8,11 @@
 #pragma push_macro("check")
 #undef check
 #include "OpenCV/library.h"
-#include "opencv2/core.hpp"
-#include "opencv2/core/ocl.hpp"
 #pragma pop_macro("check")
 
 #define LOCTEXT_NAMESPACE "FOpenComputerVisionModule"
+
+using namespace opencv;
 
 void FOpenComputerVisionModule::StartupModule()
 {
