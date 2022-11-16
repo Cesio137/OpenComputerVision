@@ -7,12 +7,14 @@ public class OpenComputerVision : ModuleRules
 	public OpenComputerVision(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        bUseRTTI = true;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
-                "$(PluginDir)/Source/ThirdParty",
-				"$(PluginDir)/Source/ThirdParty/OpenCV/Win64/include"
+                "$(PluginDir)/Source/ThirdParty/OpenCVLibrary",
+				"$(PluginDir)/Source/ThirdParty/OpenCVLibrary/Win64/include"
 			}
 			);
 				
@@ -30,7 +32,7 @@ public class OpenComputerVision : ModuleRules
 				"Core",
 				"CoreUObject",
 				"Engine",
-				"OpenCV",
+				"OpenCVLibrary",
 				"Projects"
 				// ... add other public dependencies that you statically link with here ...
 			}

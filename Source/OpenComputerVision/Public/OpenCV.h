@@ -7,11 +7,9 @@
 #include "OpenCVData.h"
 #pragma push_macro("check")
 #undef check
-#include "OpenCV/library.h"
+#include "OpenCVLibrary.h"
 #pragma pop_macro("check")
 #include "OpenCV.generated.h"
-
-using namespace opencv;
 
 /**
  * 
