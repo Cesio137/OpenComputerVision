@@ -3,7 +3,9 @@ project(OpenCVLibrary)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
 add_library(OpenCVLibrary SHARED OpenCVLibrary.h OpenCVLibrary.cpp)
+
 target_include_directories(OpenCVLibrary PUBLIC ${CMAKE_SOURCE_DIR}/Win64/include)
 target_link_libraries(OpenCVLibrary ${CMAKE_SOURCE_DIR}/Win64/lib/opencv_world460.lib ${CMAKE_SOURCE_DIR}/Win64/lib/opencv_world460d.lib)
 

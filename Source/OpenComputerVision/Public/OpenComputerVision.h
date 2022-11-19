@@ -14,10 +14,10 @@ public:
 
 private:
 	/** Handle to the test dll we will load */
-	void* OpenCVLibraryHandle;
-	void* opencv_worldLibraryHandle;
-	void* opencv_worldLibraryHandle_d;
-	void* opencv_videoioLibraryHandle;
-	void* opencv_videoioLibraryHandle_d;
-	void* opencv_videoio_ffmpegLibraryHandle;
+    void* OpenCVLibraryHandle;
+    void* opencv_worldLibraryHandle;
+    void* opencv_worldLibraryHandle_d;
+    void* opencv_videoioLibraryHandle;
+    void* opencv_videoioLibraryHandle_d;
+    void* opencv_videoio_ffmpegLibraryHandle;
 };

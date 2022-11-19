@@ -2,15 +2,9 @@
 
 ---
 
-
-
 This is a integration of [OpenCV](https://opencv.org) as a thirdparty plugin for Unreal Engine
 
-
-
 ---
-
-
 
 - [x] Windows
 
@@ -19,8 +13,6 @@ This is a integration of [OpenCV](https://opencv.org) as a thirdparty plugin for
 - [ ] Mac(Help Wanted)
 
 # Setting Up Your Project
-
-
 
 - Install VS 2019/2022 and Engine sources.
 - Install CMake 3.20 or above.
