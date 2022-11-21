@@ -12,12 +12,12 @@ public class OpenComputerVisionLibrary : ModuleRules
 		if (Target.Platform == UnrealTargetPlatform.Win64)
 		{
 			// Add the import library
-            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "Win64", "lib", "OpenCVLibrary.lib"));
+            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "Win64", "lib", "opencv.lib"));
             PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "Win64", "lib", "opencv_world460.lib"));
             PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "Win64", "lib", "opencv_world460d.lib"));
 
 			// Delay-load the DLL, so we can load it from the right place first
-            PublicDelayLoadDLLs.Add("OpenCVLibrary.dll");
+            PublicDelayLoadDLLs.Add("opencv.dll");
             PublicDelayLoadDLLs.Add("opencv_world460.dll");
             PublicDelayLoadDLLs.Add("opencv_world460d.dll");
             PublicDelayLoadDLLs.Add("opencv_videoio_msmf460_64.dll");
@@ -25,7 +25,7 @@ public class OpenComputerVisionLibrary : ModuleRules
             PublicDelayLoadDLLs.Add("opencv_videoio_ffmpeg460_64.dll");
 
 			// Ensure that the DLL is staged along with the executable
-            RuntimeDependencies.Add("$(PluginDir)/Binaries/ThirdParty/OpenComputerVisionLibrary/Win64/OpenCVLibrary.dll");
+            RuntimeDependencies.Add("$(PluginDir)/Binaries/ThirdParty/OpenComputerVisionLibrary/Win64/opencv.dll");
             RuntimeDependencies.Add("$(PluginDir)/Binaries/ThirdParty/OpenComputerVisionLibrary/Win64/opencv_world460.dll");
             RuntimeDependencies.Add("$(PluginDir)/Binaries/ThirdParty/OpenComputerVisionLibrary/Win64/opencv_world460d.dll");
             RuntimeDependencies.Add("$(PluginDir)/Binaries/ThirdParty/OpenComputerVisionLibrary/Win64/opencv_videoio_msmf460_64.dll");
